@@ -1,0 +1,18 @@
+<form action="/" method="POST" class="d-flex flex-column align-items-center text-center">
+  <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/16716/ExportedContentImage_00.png" width="300"
+    height="300" class="d-inline-block align-top mt-3" alt="短網址生產器">
+  <a href="{{newURL}}" id="short_url" class="mt-3 mb-3">http://localhost:3000/{{shortURL}}</a>
+  <button class="btn btn-outline-dark" type="submit" id="copy_btn" onclick="copyUrl()">Copy</button>
+</form>
+
+<script>
+  
+  const shortUrl = document.querySelector('#short_url').textContent
+  const copyBtn = document.querySelector('copy_btn')
+  
+// 使用onClick 和 Clipboard API 複製文字
+  function copyUrl() {
+    navigator.clipboard.writeText(shortUrl)
+    alert('網址已複製。')
+  }
+</script>
