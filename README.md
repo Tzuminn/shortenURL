@@ -40,7 +40,7 @@ npm run dev
 
 ### 首頁
 
-![首頁]()
+![首頁](https://github.com/Tzuminn/shortenURL/blob/main/public/img/home.jpg)
 
 
 ## 環境及安裝套件
